@@ -1,3 +1,8 @@
 {
-  "packageManager": "yarn@3.2.3"
+  "name": "@lolpants/eslint-config",
+  "version": "0.1.0",
+  "packageManager": "yarn@3.2.3",
+  "repository": "git@github.com:lolPants/eslint-config.git",
+  "author": "Jack Baron <jackmbaron@gmail.com>",
+  "license": "MIT"
 }
