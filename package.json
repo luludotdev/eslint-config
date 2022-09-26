@@ -5,11 +5,9 @@
   "type": "commonjs",
   "main": "./base.js",
   "scripts": {
-    "lint": "prettier --check . && eslint src --ext ts",
-    "format": "prettier --write . && eslint src --ext ts --fix",
-    "fmt": "yarn run format",
-    "test": "yarn run check && yarn run lint",
-    "prepack": "yarn run test && yarn run build"
+    "lint": "prettier --check . && eslint src --ext js,ts",
+    "format": "prettier --write . && eslint src --ext js,ts --fix",
+    "fmt": "yarn run format"
   },
   "author": "Jack Baron <jackmbaron@gmail.com> (https://www.jackbaron.com)",
   "license": "MIT",
