@@ -1,1 +1,1 @@
-module.exports = require('./configs/typescript.js')
+module.exports = require('./src/typescript.js')
