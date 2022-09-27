@@ -2,7 +2,8 @@
   "root": true,
   "extends": ["neon/common", "neon/node", "neon/prettier", "./src/base.js"],
   "rules": {
-    "jsdoc/valid-types": 0
+    "jsdoc/valid-types": 0,
+    "sort-keys": ["error", "asc", { "allowLineSeparatedGroups": true }]
   },
   "ignorePatterns": ["**/build/*"]
 }

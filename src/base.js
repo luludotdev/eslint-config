@@ -12,13 +12,6 @@ module.exports = {
     ],
     'default-case': ['warn', { commentPattern: '^skip\\sdefault' }],
     'default-case-last': ['error'],
-    'no-warning-comments': [
-      'warn',
-      {
-        location: 'start',
-        terms: ['TODO', '@todo', 'fixme', '@fixme', 'fix', '@fix'],
-      },
-    ],
     'max-depth': ['warn'],
     'no-await-in-loop': ['warn'],
     'no-constant-condition': ['warn'],
@@ -26,9 +19,16 @@ module.exports = {
     'no-empty': ['warn', { allowEmptyCatch: true }],
     'no-implied-eval': ['error'],
     'no-invalid-this': ['error'],
+    'no-negated-condition': ['off'],
     'no-new': ['error'],
     'no-sparse-arrays': ['error'],
-    'no-negated-condition': ['off'],
+    'no-warning-comments': [
+      'warn',
+      {
+        location: 'start',
+        terms: ['TODO', '@todo', 'fixme', '@fixme', 'fix', '@fix'],
+      },
+    ],
     'sort-imports': [
       'error',
       {
@@ -37,16 +37,16 @@ module.exports = {
       },
     ],
 
-    'no-use-extend-native/no-use-extend-native': ['error'],
-
-    'n/prefer-promises/dns': ['error'],
-    'n/prefer-promises/fs': ['error'],
-
+    'eslint-comments/disable-enable-pair': ['error', { allowWholeFile: true }],
     'eslint-comments/no-aggregating-enable': ['error'],
     'eslint-comments/no-duplicate-disable': ['error'],
     'eslint-comments/no-unused-disable': ['error'],
     'eslint-comments/no-unused-enable': ['error'],
-    'eslint-comments/disable-enable-pair': ['error', { allowWholeFile: true }],
+
+    'n/prefer-promises/dns': ['error'],
+    'n/prefer-promises/fs': ['error'],
+
+    'no-use-extend-native/no-use-extend-native': ['error'],
 
     'unicorn/explicit-length-check': ['error'],
     'unicorn/no-array-callback-reference': ['error'],
