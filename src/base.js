@@ -28,6 +28,14 @@ module.exports = {
     'no-invalid-this': ['error'],
     'no-new': ['error'],
     'no-sparse-arrays': ['error'],
+    'no-negated-condition': ['off'],
+    'sort-imports': [
+      'error',
+      {
+        ignoreCase: true,
+        ignoreDeclarationSort: true,
+      },
+    ],
 
     'no-use-extend-native/no-use-extend-native': ['error'],
 
