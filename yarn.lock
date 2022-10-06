@@ -325,6 +325,7 @@ __metadata:
     eslint-config-neon: ^0.1.33
     eslint-plugin-eslint-comments: ^3.2.0
     eslint-plugin-no-use-extend-native: ^0.5.0
+    eslint-plugin-sort-exports: ^0.7.0
     prettier: ^2.7.1
     typescript: ^4.8.3
   languageName: unknown
@@ -1541,6 +1542,15 @@ __metadata:
   peerDependencies:
     eslint: ^5.0.0 || ^6.0.0 || ^7.0.0 || ^8.0.0
   checksum: 0718232626057e9a30c58350ef79af3bbc5ea7c3a880d1609965b0c1cbe347e4834ddf831962f755464f7a6350cb715c1c76e2670dc7bdf1a48c37bf0fe269c8
+  languageName: node
+  linkType: hard
+
+"eslint-plugin-sort-exports@npm:^0.7.0":
+  version: 0.7.0
+  resolution: "eslint-plugin-sort-exports@npm:0.7.0"
+  peerDependencies:
+    eslint: ">=5.0.0"
+  checksum: 504104a0b9d35e1d3841e920b73a01aba5e35e9eaaf50972ca2814c26ddf2a78687bf7b684bc577040ca9fce07d7fbe7736bf8afa486d0c6e9a8a7ebd860fb40
   languageName: node
   linkType: hard
 

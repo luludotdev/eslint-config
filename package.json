@@ -24,7 +24,8 @@
   },
   "dependencies": {
     "eslint-plugin-eslint-comments": "^3.2.0",
-    "eslint-plugin-no-use-extend-native": "^0.5.0"
+    "eslint-plugin-no-use-extend-native": "^0.5.0",
+    "eslint-plugin-sort-exports": "^0.7.0"
   },
   "devDependencies": {
     "eslint": "^8.24.0",
