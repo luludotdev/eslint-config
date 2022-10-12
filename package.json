@@ -1,6 +1,6 @@
 {
   "name": "@lolpants/eslint-config",
-  "version": "0.1.2",
+  "version": "0.2.0",
   "packageManager": "yarn@3.2.4",
   "type": "commonjs",
   "main": "./base.js",
