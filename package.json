@@ -11,7 +11,9 @@
   "scripts": {
     "lint": "prettier --check . && eslint src --ext js,ts",
     "format": "prettier --write . && eslint src --ext js,ts --fix",
-    "fmt": "yarn run format"
+    "fmt": "yarn run format",
+    "prepack": "node ./scripts/copy.mjs",
+    "postpack": "node ./scripts/clean.mjs"
   },
   "author": "Jack Baron <jackmbaron@gmail.com> (https://www.jackbaron.com)",
   "license": "MIT",
