@@ -48,3 +48,6 @@ docs
 
 # VSCode
 .vscode
+
+# Root Exports
+/*.js
