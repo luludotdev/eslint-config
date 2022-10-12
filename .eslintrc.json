@@ -1,6 +1,6 @@
 {
   "root": true,
-  "extends": ["neon/common", "neon/node", "neon/prettier", "./src/base.js"],
+  "extends": ["./src/common.js", "./src/node.js", "./src/prettier.js"],
   "rules": {
     "jsdoc/valid-types": 0,
     "sort-keys": ["error", "asc", { "allowLineSeparatedGroups": true }]

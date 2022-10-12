@@ -1,6 +1,7 @@
 /** @type {import('eslint').Linter.Config} */
 module.exports = {
-  plugins: ['eslint-comments', 'no-use-extend-native', 'sort-exports'],
+  extends: ['neon/common'],
+  plugins: ['eslint-comments', 'no-use-extend-native'],
   rules: {
     'accessor-pairs': [
       'error',
@@ -43,12 +44,7 @@ module.exports = {
     'eslint-comments/no-unused-disable': ['error'],
     'eslint-comments/no-unused-enable': ['error'],
 
-    'n/prefer-promises/dns': ['error'],
-    'n/prefer-promises/fs': ['error'],
-
     'no-use-extend-native/no-use-extend-native': ['error'],
-
-    'sort-exports/sort-exports': ['error', { ignoreCase: true }],
 
     'unicorn/explicit-length-check': ['error'],
     'unicorn/no-array-callback-reference': ['error'],

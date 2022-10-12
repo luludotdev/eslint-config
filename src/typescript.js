@@ -1,6 +1,10 @@
 /** @type {import('eslint').Linter.Config} */
 module.exports = {
+  extends: ['neon/typescript'],
+  plugins: ['deprecation'],
   rules: {
+    'deprecation/deprecation': 1,
+
     'typescript-sort-keys/interface': ['off'],
 
     '@typescript-eslint/consistent-type-definitions': ['error', 'interface'],
