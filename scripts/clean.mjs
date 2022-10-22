@@ -3,7 +3,11 @@ import { iterateDir } from './common.mjs'
 
 const entries = await iterateDir()
 const jobs = entries.map(async ([name]) => {
-  await unlink(`./${name}`)
+  try {
+    await unlink(`./${name}`)
+  } catch {
+    // Pass
+  }
 })
 
 await Promise.all(jobs)
