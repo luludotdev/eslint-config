@@ -2,8 +2,6 @@
 module.exports = {
   extends: ['neon/typescript'],
   rules: {
-    'typescript-sort-keys/interface': ['off'],
-
     '@typescript-eslint/consistent-type-definitions': ['error', 'interface'],
     '@typescript-eslint/lines-between-class-members': 'off',
     '@typescript-eslint/no-explicit-any': ['error'],
@@ -26,5 +24,9 @@ module.exports = {
       'error',
       { prefer: 'parameter-property' },
     ],
+
+    'import/consistent-type-specifier-style': ['error', 'prefer-top-level'],
+
+    'typescript-sort-keys/interface': ['off'],
   },
 }
