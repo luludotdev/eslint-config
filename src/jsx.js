@@ -18,5 +18,7 @@ module.exports = {
         warnOnSpreadAttributes: true,
       },
     ],
+    'react/jsx-sort-default-props': ['off'],
+    'react/sort-default-props': ['error'],
   },
 }
