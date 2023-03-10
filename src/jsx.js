@@ -3,6 +3,7 @@ module.exports = {
   extends: ['neon/jsx'],
   rules: {
     'react/jsx-fragments': ['error', 'syntax'],
+    'react/jsx-handler-names': ['off'],
     'react/jsx-key': [
       'error',
       {
