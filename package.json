@@ -27,7 +27,6 @@
   "dependencies": {
     "eslint-config-neon": "^0.1.40",
     "eslint-plugin-eslint-comments": "^3.2.0",
-    "eslint-plugin-import": "^2.27.5",
     "eslint-plugin-no-use-extend-native": "^0.5.0"
   },
   "devDependencies": {
