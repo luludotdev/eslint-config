@@ -25,8 +25,7 @@ module.exports = {
       { prefer: 'parameter-property' },
     ],
 
-    // TODO: Uncomment when eslint-import-i is updated or replaced
-    // 'import/consistent-type-specifier-style': ['error', 'prefer-top-level'],
+    'import/consistent-type-specifier-style': ['error', 'prefer-top-level'],
 
     'typescript-sort-keys/interface': ['off'],
   },
