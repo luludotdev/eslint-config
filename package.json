@@ -24,13 +24,13 @@
     "node": ">=16.0.0"
   },
   "dependencies": {
-    "eslint-config-neon": "^0.1.46",
+    "eslint-config-neon": "^0.1.47",
     "eslint-plugin-eslint-comments": "^3.2.0",
     "eslint-plugin-no-use-extend-native": "^0.5.0"
   },
   "devDependencies": {
-    "eslint": "^8.40.0",
+    "eslint": "^8.43.0",
     "prettier": "^2.8.8",
-    "typescript": "^5.0.4"
+    "typescript": "^5.1.3"
   }
 }
