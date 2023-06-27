@@ -1,5 +1,5 @@
 {
-  "name": "@lolpants/eslint-config",
+  "name": "@luludev/eslint-config",
   "version": "0.4.1",
   "type": "commonjs",
   "main": "./common.js",
@@ -18,7 +18,7 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/lolPants/eslint-config.git"
+    "url": "https://github.com/luludotdev/eslint-config.git"
   },
   "engines": {
     "node": ">=16.0.0"
