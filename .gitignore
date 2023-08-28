@@ -51,3 +51,6 @@ docs
 
 # Root Exports
 /*.js
+
+# Lint Dir
+/lint

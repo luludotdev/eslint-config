@@ -8,8 +8,12 @@
     "*.js"
   ],
   "scripts": {
+    "prelint": "node ./scripts/copy.mjs --lint",
     "lint": "prettier --check . && eslint src --ext js,ts",
+    "postlint": "node ./scripts/clean.mjs --lint",
+    "preformat": "npm run prelint",
     "format": "prettier --write . && eslint src --ext js,ts --fix",
+    "postformat": "npm run postlint",
     "fmt": "npm run format",
     "prepack": "node ./scripts/copy.mjs",
     "postpack": "node ./scripts/clean.mjs"
