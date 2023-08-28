@@ -1,13 +1,22 @@
-/** @type {import('eslint').Linter.Config} */
-module.exports = {
-  extends: ['neon/next'],
-  rules: {
-    '@typescript-eslint/no-use-before-define': ['off'],
+// @ts-check
 
-    'n/prefer-global/url-search-params': ['off'],
+/** @type {string[]} */
+const extend = []
 
-    'react/no-unknown-property': ['error', { ignore: ['jsx', 'global'] }],
+/**
+ * @param {boolean} old
+ */
+const plugins = old => (old ? [] : {})
 
-    'unicorn/prefer-node-protocol': ['off'],
-  },
+/** @type {import('eslint').Linter.RulesRecord} */
+const rules = {
+  '@typescript-eslint/no-use-before-define': ['off'],
+
+  'n/prefer-global/url-search-params': ['off'],
+
+  'react/no-unknown-property': ['error', { ignore: ['jsx', 'global'] }],
+
+  'unicorn/prefer-node-protocol': ['off'],
 }
+
+module.exports = { extends: extend, plugins, rules }

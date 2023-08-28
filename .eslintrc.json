@@ -1,6 +1,6 @@
 {
   "root": true,
-  "extends": ["./src/common.js", "./src/node.js", "./src/prettier.js"],
+  "extends": ["./common.js", "./node.js", "./prettier.js"],
   "rules": {
     "jsdoc/valid-types": 0,
     "sort-keys": ["error", "asc", { "allowLineSeparatedGroups": true }]
