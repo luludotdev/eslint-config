@@ -54,7 +54,7 @@ const rules = {
   'no-use-extend-native/no-use-extend-native': ['error'],
 
   'unicorn/explicit-length-check': ['error'],
-  'unicorn/no-array-callback-reference': ['error'],
+  // 'unicorn/no-array-callback-reference': ['error'],
   'unicorn/no-array-push-push': ['error'],
   'unicorn/no-await-expression-member': ['error'],
   'unicorn/no-console-spaces': ['error'],
