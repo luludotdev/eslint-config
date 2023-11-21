@@ -12,6 +12,7 @@ const plugins = old => (old ? [] : {})
 const rules = {
   '@typescript-eslint/no-use-before-define': ['off'],
 
+  'n/prefer-global/url': ['off'],
   'n/prefer-global/url-search-params': ['off'],
 
   'react/no-unknown-property': ['error', { ignore: ['jsx', 'global'] }],
