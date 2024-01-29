@@ -30,6 +30,7 @@
   },
   "dependencies": {
     "eslint-config-neon": "^0.1.57",
+    "eslint-plugin-drizzle": "^0.2.3",
     "eslint-plugin-eslint-comments": "^3.2.0",
     "eslint-plugin-no-use-extend-native": "^0.5.0"
   },
