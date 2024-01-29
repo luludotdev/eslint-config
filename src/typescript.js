@@ -10,7 +10,7 @@ const plugins = old => (old ? [] : {})
 
 /** @type {import('eslint').Linter.RulesRecord} */
 const rules = {
-  '@typescript-eslint/consistent-type-definitions': ['error', 'interface'],
+  '@typescript-eslint/consistent-type-definitions': 'off',
   '@typescript-eslint/lines-between-class-members': 'off',
   '@typescript-eslint/no-explicit-any': ['error'],
   '@typescript-eslint/no-inferrable-types': [
