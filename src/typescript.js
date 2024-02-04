@@ -12,6 +12,7 @@ const plugins = old => (old ? [] : {})
 const rules = {
   '@typescript-eslint/consistent-type-definitions': 'off',
   '@typescript-eslint/lines-between-class-members': 'off',
+  '@typescript-eslint/method-signature-style': ['error', 'property'],
   '@typescript-eslint/no-explicit-any': ['error'],
   '@typescript-eslint/no-inferrable-types': [
     'error',
