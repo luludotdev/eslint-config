@@ -1,6 +1,6 @@
 {
   "name": "@luludev/eslint-config",
-  "version": "0.5.3",
+  "version": "0.5.4",
   "type": "commonjs",
   "main": "./common.js",
   "files": [
