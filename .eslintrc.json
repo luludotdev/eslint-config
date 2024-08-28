@@ -1,9 +1,0 @@
-{
-  "root": true,
-  "extends": ["./lint/common.js", "./lint/node.js", "./lint/prettier.js"],
-  "rules": {
-    "jsdoc/valid-types": 0,
-    "sort-keys": ["error", "asc", { "allowLineSeparatedGroups": true }]
-  },
-  "ignorePatterns": ["**/build/*"]
-}

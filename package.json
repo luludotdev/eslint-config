@@ -1,22 +1,85 @@
 {
   "name": "@luludev/eslint-config",
   "version": "0.5.4",
-  "type": "commonjs",
-  "main": "./common.js",
+  "type": "module",
+  "main": "./dist/index.js",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    },
+    "./browser": {
+      "import": "./dist/browser.js",
+      "types": "./dist/browser.d.ts"
+    },
+    "./common": {
+      "import": "./dist/common.js",
+      "types": "./dist/common.d.ts"
+    },
+    "./drizzle": {
+      "import": "./dist/drizzle.js",
+      "types": "./dist/drizzle.d.ts"
+    },
+    "./edge": {
+      "import": "./dist/edge.js",
+      "types": "./dist/edge.d.ts"
+    },
+    "./jsx-a11y": {
+      "import": "./dist/jsx-a11y.js",
+      "types": "./dist/jsx-a11y.d.ts"
+    },
+    "./jsx": {
+      "import": "./dist/jsx.js",
+      "types": "./dist/jsx.d.ts"
+    },
+    "./mdx": {
+      "import": "./dist/mdx.js",
+      "types": "./dist/mdx.d.ts"
+    },
+    "./module": {
+      "import": "./dist/module.js",
+      "types": "./dist/module.d.ts"
+    },
+    "./next": {
+      "import": "./dist/next.js",
+      "types": "./dist/next.d.ts"
+    },
+    "./no-deprecated": {
+      "import": "./dist/no-deprecated.js",
+      "types": "./dist/no-deprecated.d.ts"
+    },
+    "./node": {
+      "import": "./dist/node.js",
+      "types": "./dist/node.d.ts"
+    },
+    "./prettier": {
+      "import": "./dist/prettier.js",
+      "types": "./dist/prettier.d.ts"
+    },
+    "./react": {
+      "import": "./dist/react.js",
+      "types": "./dist/react.d.ts"
+    },
+    "./typescript": {
+      "import": "./dist/typescript.js",
+      "types": "./dist/typescript.d.ts"
+    }
+  },
+  "sideEffects": false,
   "files": [
-    "src/*.js",
-    "*.js"
+    "dist"
   ],
   "scripts": {
-    "prelint": "node ./scripts/copy.mjs --lint",
-    "lint": "prettier --check . && eslint src --ext js,ts",
-    "postlint": "node ./scripts/clean.mjs --lint",
-    "preformat": "npm run prelint",
-    "format": "prettier --write . && eslint src --ext js,ts --fix",
-    "postformat": "npm run postlint",
+    "build": "tsup",
+    "check": "tsc --noEmit --skipLibCheck",
+    "dev": "npm run build -- --watch",
+    "lint": "prettier --check . && eslint src",
+    "format": "prettier --write . && eslint src --fix",
     "fmt": "npm run format",
-    "prepack": "node ./scripts/copy.mjs",
-    "postpack": "node ./scripts/clean.mjs",
+    "test": "npm run check && npm run lint",
+    "prepack": "npm run test && npm run build",
     "postversion": "git push --follow-tags"
   },
   "author": "Jack Baron <jackmbaron@gmail.com> (https://www.jackbaron.com)",
@@ -26,17 +89,21 @@
     "url": "https://github.com/luludotdev/eslint-config.git"
   },
   "engines": {
-    "node": ">=16.0.0"
+    "node": "^18.18.0 || ^20.9.0 || >=21.1.0"
   },
   "dependencies": {
-    "eslint-config-neon": "^0.1.58",
+    "@eslint/compat": "^1.1.1",
+    "eslint-config-neon": "^0.2.0",
     "eslint-plugin-drizzle": "^0.2.3",
     "eslint-plugin-eslint-comments": "^3.2.0",
-    "eslint-plugin-no-use-extend-native": "^0.5.0"
+    "eslint-plugin-no-use-extend-native": "^0.7.2",
+    "lodash.merge": "^4.6.2"
   },
   "devDependencies": {
-    "eslint": "^8.56.0",
-    "prettier": "^3.2.5",
-    "typescript": "^5.3.3"
+    "@typescript-eslint/utils": "^8.3.0",
+    "eslint": "^9.9.1",
+    "prettier": "^3.3.3",
+    "tsup": "^8.2.4",
+    "typescript": "^5.5.4"
   }
 }

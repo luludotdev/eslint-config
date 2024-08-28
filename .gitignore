@@ -49,8 +49,5 @@ docs
 # VSCode
 .vscode
 
-# Root Exports
-/*.js
-
-# Lint Dir
-/lint
+# Compiled TypeScript
+dist/

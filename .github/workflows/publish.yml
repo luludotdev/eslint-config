@@ -20,7 +20,7 @@ jobs:
         with:
           cache: npm
           node-version: ${{ env.NODE_VERSION }}
-          registry-url: 'https://registry.npmjs.org'
+          registry-url: "https://registry.npmjs.org"
       - name: Update npm
         run: npm install -g npm
       - name: Install packages
