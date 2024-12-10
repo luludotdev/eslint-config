@@ -14,7 +14,7 @@ const rules: TSESLint.FlatConfig.Rules = {
       ignoreProperties: false,
     },
   ],
-  "@typescript-eslint/no-throw-literal": [
+  "@typescript-eslint/only-throw-error": [
     "error",
     {
       allowThrowingAny: false,
