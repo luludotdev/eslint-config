@@ -1,6 +1,6 @@
 import type { TSESLint } from "@typescript-eslint/utils";
 import jsx from "eslint-config-neon/jsx";
-import merge from "lodash.merge";
+import { merge } from "./_merge.ts";
 
 const rules: TSESLint.FlatConfig.Rules = {
   "react/jsx-fragments": ["error", "syntax"],
@@ -24,11 +24,9 @@ const rules: TSESLint.FlatConfig.Rules = {
   "react/sort-default-props": ["error"],
 };
 
-const config: TSESLint.FlatConfig.ConfigArray = [
-  {
-    rules,
-  },
-];
+const config: TSESLint.FlatConfig.Config = {
+  rules,
+};
 
-const merged: TSESLint.FlatConfig.ConfigArray = merge(jsx, config);
+const merged: TSESLint.FlatConfig.ConfigArray = merge(config, jsx);
 export default merged;

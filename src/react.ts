@@ -1,6 +1,6 @@
 import type { TSESLint } from "@typescript-eslint/utils";
 import react from "eslint-config-neon/react";
-import merge from "lodash.merge";
+import { merge } from "./_merge.ts";
 import jsx from "./jsx.ts";
 
 const rules: TSESLint.FlatConfig.Rules = {
@@ -21,12 +21,13 @@ const rules: TSESLint.FlatConfig.Rules = {
   "react/no-unescaped-entities": ["error"],
 };
 
-const config: TSESLint.FlatConfig.ConfigArray = [
+const config: TSESLint.FlatConfig.Config = {
+  rules,
+};
+
+const merged: TSESLint.FlatConfig.ConfigArray = [
   ...jsx,
-  {
-    rules,
-  },
+  ...merge(config, react),
 ];
 
-const merged: TSESLint.FlatConfig.ConfigArray = merge(react, config);
 export default merged;

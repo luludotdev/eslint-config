@@ -1,6 +1,6 @@
 import type { TSESLint } from "@typescript-eslint/utils";
 import typescript from "eslint-config-neon/typescript";
-import merge from "lodash.merge";
+import { merge } from "./_merge.ts";
 
 const rules: TSESLint.FlatConfig.Rules = {
   "@typescript-eslint/consistent-type-definitions": "off",
@@ -32,11 +32,9 @@ const rules: TSESLint.FlatConfig.Rules = {
   "typescript-sort-keys/interface": ["off"],
 };
 
-const config: TSESLint.FlatConfig.ConfigArray = [
-  {
-    rules,
-  },
-];
+const config: TSESLint.FlatConfig.Config = {
+  rules,
+};
 
-const merged: TSESLint.FlatConfig.ConfigArray = merge(typescript, config);
+const merged: TSESLint.FlatConfig.ConfigArray = merge(config, typescript);
 export default merged;

@@ -5,7 +5,7 @@ import common from "eslint-config-neon/common";
 import eslintPluginEslintComments from "eslint-plugin-eslint-comments";
 // @ts-expect-error eslint-plugin-no-use-extend-native is not typed
 import eslintPluginNoUseExtendNative from "eslint-plugin-no-use-extend-native";
-import merge from "lodash.merge";
+import { merge } from "./_merge.ts";
 
 const rules: TSESLint.FlatConfig.Rules = {
   "accessor-pairs": [
@@ -64,15 +64,13 @@ const rules: TSESLint.FlatConfig.Rules = {
   "unicorn/prefer-ternary": ["error"],
 };
 
-const config: TSESLint.FlatConfig.ConfigArray = [
-  {
-    plugins: {
-      "eslint-comments": fixupPluginRules(eslintPluginEslintComments),
-      "no-use-extend-native": fixupPluginRules(eslintPluginNoUseExtendNative),
-    },
-    rules,
+const config: TSESLint.FlatConfig.Config = {
+  plugins: {
+    "eslint-comments": fixupPluginRules(eslintPluginEslintComments),
+    "no-use-extend-native": fixupPluginRules(eslintPluginNoUseExtendNative),
   },
-];
+  rules,
+};
 
-const merged: TSESLint.FlatConfig.ConfigArray = merge(common, config);
+const merged: TSESLint.FlatConfig.ConfigArray = merge(config, common);
 export default merged;
