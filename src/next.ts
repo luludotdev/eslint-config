@@ -10,6 +10,8 @@ const rules: TSESLint.FlatConfig.Rules = {
 
   "react/no-unknown-property": ["error", { ignore: ["jsx", "global"] }],
 
+  "react-refresh/only-export-components": ["off"],
+
   "unicorn/prefer-node-protocol": ["off"],
 };
 
