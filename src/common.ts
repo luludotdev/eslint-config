@@ -5,7 +5,7 @@ import common from "eslint-config-neon/common";
 import eslintPluginEslintComments from "eslint-plugin-eslint-comments";
 // @ts-expect-error eslint-plugin-no-use-extend-native is not typed
 import eslintPluginNoUseExtendNative from "eslint-plugin-no-use-extend-native";
-import { merge } from "./_merge.ts";
+import { merge } from "./_utils/merge.ts";
 
 const rules: TSESLint.FlatConfig.Rules = {
   "accessor-pairs": [

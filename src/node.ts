@@ -1,6 +1,6 @@
 import type { TSESLint } from "@typescript-eslint/utils";
 import node from "eslint-config-neon/node";
-import { merge } from "./_merge.ts";
+import { merge } from "./_utils/merge.ts";
 
 const rules: TSESLint.FlatConfig.Rules = {
   "n/prefer-promises/dns": ["error"],

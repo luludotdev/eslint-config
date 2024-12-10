@@ -1,6 +1,6 @@
 import type { TSESLint } from "@typescript-eslint/utils";
 import react from "eslint-config-neon/react";
-import { merge } from "./_merge.ts";
+import { merge } from "./_utils/merge.ts";
 import jsx from "./jsx.ts";
 
 const rules: TSESLint.FlatConfig.Rules = {

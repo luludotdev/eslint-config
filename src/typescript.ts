@@ -1,6 +1,6 @@
 import type { TSESLint } from "@typescript-eslint/utils";
 import typescript from "eslint-config-neon/typescript";
-import { merge } from "./_merge.ts";
+import { merge } from "./_utils/merge.ts";
 
 const rules: TSESLint.FlatConfig.Rules = {
   "@typescript-eslint/consistent-type-definitions": "off",

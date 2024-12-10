@@ -1,6 +1,6 @@
 import type { TSESLint } from "@typescript-eslint/utils";
 import next from "eslint-config-neon/next";
-import { merge } from "./_merge.ts";
+import { merge } from "./_utils/merge.ts";
 
 const rules: TSESLint.FlatConfig.Rules = {
   "@typescript-eslint/no-use-before-define": ["off"],

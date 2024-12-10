@@ -1,6 +1,6 @@
 import type { TSESLint } from "@typescript-eslint/utils";
 import jsx from "eslint-config-neon/jsx";
-import { merge } from "./_merge.ts";
+import { merge } from "./_utils/merge.ts";
 
 const rules: TSESLint.FlatConfig.Rules = {
   "react/jsx-fragments": ["error", "syntax"],
