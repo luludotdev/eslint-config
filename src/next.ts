@@ -5,8 +5,8 @@ import { merge } from "./_utils/merge.ts";
 const rules: TSESLint.FlatConfig.Rules = {
   "@typescript-eslint/no-use-before-define": ["off"],
 
-  "n/prefer-global/url": ["off"],
-  "n/prefer-global/url-search-params": ["off"],
+  "n/prefer-global/url": ["error", "always"],
+  "n/prefer-global/url-search-params": ["error", "always"],
 
   "react/no-unknown-property": ["error", { ignore: ["jsx", "global"] }],
 
