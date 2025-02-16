@@ -82,7 +82,7 @@
     "prepack": "npm run test && npm run build",
     "postversion": "git push --follow-tags"
   },
-  "author": "Jack Baron <jackmbaron@gmail.com> (https://www.jackbaron.com)",
+  "author": "Lulu (https://lulu.dev)",
   "license": "MIT",
   "repository": {
     "type": "git",
