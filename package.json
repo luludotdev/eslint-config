@@ -92,8 +92,8 @@
     "node": "^18.18.0 || ^20.9.0 || >=21.1.0"
   },
   "dependencies": {
-    "@eslint/compat": "^1.2.4",
-    "eslint-config-neon": "^0.2.3",
+    "@eslint/compat": "^1.2.6",
+    "eslint-config-neon": "^0.2.4",
     "eslint-plugin-drizzle": "^0.2.3",
     "eslint-plugin-eslint-comments": "^3.2.0",
     "eslint-plugin-no-use-extend-native": "^0.7.2",
@@ -101,11 +101,11 @@
   },
   "devDependencies": {
     "@types/lodash.merge": "^4.6.9",
-    "@typescript-eslint/utils": "^8.18.0",
-    "eslint": "^9.16.0",
-    "prettier": "^3.4.2",
-    "tsup": "^8.3.5",
-    "typescript": "^5.7.2"
+    "@typescript-eslint/utils": "^8.24.0",
+    "eslint": "^9.20.1",
+    "prettier": "^3.5.1",
+    "tsup": "^8.3.6",
+    "typescript": "^5.7.3"
   },
   "overrides": {
     "@angular-eslint/eslint-plugin": "npm:@favware/skip-dependency@latest",
