@@ -74,12 +74,12 @@
   "scripts": {
     "build": "tsup",
     "check": "tsc --noEmit --skipLibCheck",
-    "dev": "npm run build -- --watch",
-    "lint": "prettier --check . && npm run build && eslint src",
-    "format": "prettier --write . && npm run build && eslint src --fix",
-    "fmt": "npm run format",
-    "test": "npm run check && npm run lint",
-    "prepack": "npm run test && npm run build",
+    "dev": "pnpm run build --watch",
+    "lint": "prettier --check . && pnpm run build && eslint src",
+    "format": "prettier --write . && pnpm run build && eslint src --fix",
+    "fmt": "pnpm run format",
+    "test": "pnpm run check && pnpm run lint",
+    "prepack": "pnpm run test && pnpm run build",
     "postversion": "git push --follow-tags"
   },
   "author": "Lulu (https://lulu.dev)",
