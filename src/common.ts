@@ -18,6 +18,13 @@ const rules: TSESLint.FlatConfig.Rules = {
   ],
   "default-case": ["warn", { commentPattern: "^skip\\sdefault" }],
   "default-case-last": ["error"],
+  "id-length": [
+    "error",
+    {
+      exceptions: ["_", "$", "a", "b", "x", "y", "z"],
+      min: 2,
+    },
+  ],
   "max-depth": ["warn"],
   "no-await-in-loop": ["warn"],
   "no-constant-condition": ["warn"],
