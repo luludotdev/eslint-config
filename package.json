@@ -26,13 +26,13 @@
       "import": "./dist/edge.js",
       "types": "./dist/edge.d.ts"
     },
-    "./jsx-a11y": {
-      "import": "./dist/jsx-a11y.js",
-      "types": "./dist/jsx-a11y.d.ts"
-    },
     "./jsx": {
       "import": "./dist/jsx.js",
       "types": "./dist/jsx.d.ts"
+    },
+    "./jsx-a11y": {
+      "import": "./dist/jsx-a11y.js",
+      "types": "./dist/jsx-a11y.d.ts"
     },
     "./mdx": {
       "import": "./dist/mdx.js",
@@ -65,6 +65,10 @@
     "./typescript": {
       "import": "./dist/typescript.js",
       "types": "./dist/typescript.d.ts"
+    },
+    "./package.json": {
+      "import": "./package.json",
+      "types": "./package.d.tson"
     }
   },
   "sideEffects": false,
