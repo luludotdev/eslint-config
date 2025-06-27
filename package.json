@@ -112,6 +112,9 @@
     "typescript": "^5.8.3"
   },
   "overrides": {
+    "@stylistic/eslint-plugin": "^5.0.0",
+    "@stylistic/eslint-plugin-jsx": "npm:@stylistic/eslint-plugin",
+    "@stylistic/eslint-plugin-ts": "npm:@stylistic/eslint-plugin",
     "@angular-eslint/eslint-plugin": "npm:@favware/skip-dependency@latest",
     "@angular-eslint/eslint-plugin-template": "npm:@favware/skip-dependency@latest",
     "@angular-eslint/template-parser": "npm:@favware/skip-dependency@latest",
@@ -126,6 +129,9 @@
   },
   "pnpm": {
     "overrides": {
+      "@stylistic/eslint-plugin": "^5.0.0",
+      "@stylistic/eslint-plugin-jsx": "npm:@stylistic/eslint-plugin",
+      "@stylistic/eslint-plugin-ts": "npm:@stylistic/eslint-plugin",
       "@angular-eslint/eslint-plugin": "-",
       "@angular-eslint/eslint-plugin-template": "-",
       "@angular-eslint/template-parser": "-",
